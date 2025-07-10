@@ -1,0 +1,23 @@
+.pillars-title {
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.pillar-item {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.pillar-icon {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.pillars-description {
+    font-style: italic;
+    color: #666;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px; }
