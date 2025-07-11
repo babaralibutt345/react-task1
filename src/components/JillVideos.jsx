@@ -18,7 +18,7 @@ const JillVideos = () => {
             <p>#Youtube</p>
             <h2 className="fw-bold">Jill’s Videos</h2>
 
-            <div className="d-flex justify-content-center align-items-center mt-4 gap-3">
+            <div className="d-flex justify-content-center align-items-center mt-4 gap-4">
                 {thumbnails.map((item, idx) => (
                     <div
                         key={idx}
@@ -28,8 +28,8 @@ const JillVideos = () => {
                             zIndex: idx === 2 ? 1 : 0,
                             boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
                             transition: 'transform 0.3s ease',
-                            width: '280px',
-                            height: '350px',
+                            width: '240px',
+                            height: '320px',
                             overflow: 'hidden',
                             borderRadius: '1px',
                             border: '3px solid black'
