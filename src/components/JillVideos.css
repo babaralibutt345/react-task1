@@ -1,0 +1,45 @@
+    .video-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE 10+ */
+    }
+    
+    .video-grid::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
+    
+    .video-card {
+        width: 240px;
+        height: 320px;
+        border-radius: 1px;
+        overflow: hidden;
+        border: 3px solid black;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+    }
+    
+    /* Hide extra cards on breakpoints */
+    .video-3, .video-4 {
+        display: none;
+    }
+  
+  @media (min-width: 768px) {
+    /* md and lg: show 3 cards */
+    .video-0, .video-1, .video-2 {
+      display: block;
+    }
+    .video-3, .video-4 {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* xl and xxl: show all 5 cards */
+    .video-0, .video-1, .video-2, .video-3, .video-4 {
+      display: block;
+    }
+  }
+  

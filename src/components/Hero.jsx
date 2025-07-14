@@ -16,14 +16,14 @@ const Hero = () => {
             <div className="container-fluid" style={{overflowX:'hidden'}}>
                 <div className="row">
                     {/* LEFT SIDE: Logo, Vertical Line, Jill Image */}
-                    <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 hero-left position-relative" style={{ backgroundColor: '#2EB6B0', height: '90vh' }}>
+                    <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 hero-left position-relative" style={{ backgroundColor: '#2EB6B0', height: '100vh' }}>
                         
                         {/* Logo - Responsive positioning */}
                         <img src={logo} alt="Logo"
                             className="img-fluid mt-3 hero-logo d-none d-md-block"
                             style={{ 
                                 maxHeight: '82px', 
-                                marginLeft: '190px', 
+                                marginLeft: '270px', 
                                 height: 'auto'
                             }}
                         />
@@ -35,14 +35,11 @@ const Hero = () => {
                             alt="Jill"
                             style={{
                                 position: "absolute",
-                                top: { xs: "10%", md: "18%" },
-                                // top: "18%",
-                                // left: "65%",
-                                left: { xs: "50%", md: "65%" },
-                                transform: "translateX(120%)",
-                                maxWidth: "58%",
+                                
+                                transform: "translate(70% , 15%)",
+                                maxWidth: "82%",
                                 // maxWidth: { xs: "80%", md: "58%", lg:'58%' },
-                                height: "65%",
+                                height: "70%",
                                 objectFit: "cover",
                                 zIndex: '2',
                             }}
@@ -53,10 +50,10 @@ const Hero = () => {
                             className="hero-vertical-line"
                             style={{
                                 position: "absolute",
-                                top: "18%",
-                                left: "54%",
+                                top: "20%",
+                                left: "44%",
                                 width: "3px",
-                                height: "58%",
+                                height: "64%",
                                 backgroundColor: "rgba(255,255,255,0.5)",
                                 borderRadius: "5px"
                             }}
@@ -67,10 +64,10 @@ const Hero = () => {
                             className="hero-arrow-circle"
                             style={{
                                 position: "absolute",
-                                top: "78%",
-                                left: "51%",
-                                width: "30px",
-                                height: "30px",
+                                top: "86%",
+                                left: "41%",
+                                width: "45px",
+                                height: "45px",
                                 borderRadius: "50%",
                                 border: "1px solid white",
                                 display: "flex",
@@ -84,7 +81,7 @@ const Hero = () => {
                     </div>
 
                     {/* RIGHT SIDE: Navbar + Text */}
-                    <div className="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex flex-column" style={{ maxHeight: '95vh'}}>
+                    <div className="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex flex-column p-3" style={{ maxHeight: '95vh'}}>
                         
                         {/* Mobile Logo (hidden on desktop) */}
                         <div className="mobile-logo d-md-none position-absolute" style={{ top: '15px', left: '15px', zIndex: '1000' }}>
@@ -161,13 +158,13 @@ const Hero = () => {
                         )}
 
                         {/* Hero Text */}
-                        <div className='d-md-flex flex-column justify-content-center align-items-center flex-grow-1 px-3 hero-text-container'>
-                            <h1 className="display-3 fw-medium hero-heading" style={{fontFamily:'Andada Pro'}}>
+                        <div className='d-md-flex flex-column justify-content-center align-items-center flex-grow-1 hero-text-container'>
+                            <h1 className="display-3 fw-bold hero-heading" style={{ fontFamily: 'Andada Pro', color:'#2F1744' , fontSize:'94px', marginLeft:'250px' }}>
                             “Motivational, <br />
                                 <span className="hero-heading-indent" style={{ marginLeft: '270px' }}> Inspirational</span> <br />
                                 <span>& Hilarious!”</span>
                             </h1>
-                            <ul className='fst-italic mt-2 d-flex align-items-center justify-content-center flex-wrap list-unstyled gap-5 hero-list' style={{ marginLeft: '50px' , fontFamily:'Andada Pro' }}>
+                            <ul className='fst-italic mt-2 d-flex align-items-center justify-content-center flex-wrap list-unstyled gap-5 hero-list' style={{ marginLeft: '300px' , fontFamily:'Andada Pro' }}>
                                 <li className="d-flex align-items-center">
                                     <div className="me-3" style={{ width: '12px', height: '12px', backgroundColor: '#2EB6B0' }}></div>
                                     Live ON Purpose!
@@ -179,7 +176,7 @@ const Hero = () => {
                             </ul>
 
                             {/* Book Jill Button */}
-                            <div className="mt-3 d-flex align-items-center justify-content-start hero-book-button" style={{ marginRight: '500px' }}>
+                            <div className="mt-3 d-flex align-items-center justify-content-start hero-book-button" style={{ marginRight: '400px' }}>
                                 <div style={{ width: '40px', height: '1.5px', backgroundColor: '#2EB6B0' }} />
                                 <div style={{
                                     width: 135,
