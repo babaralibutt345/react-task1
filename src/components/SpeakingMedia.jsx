@@ -2,7 +2,7 @@ import section2img from '../assets/section2img.jpg';
 
 const SpeakingMedia = () => {
     return (
-        <section className="position-relative py-4 py-lg-5" style={{ backgroundColor: "#F8F8F8", overflow: 'hidden' }}>
+        <section className="position-relative py-5 py-lg-5" style={{ backgroundColor: "#F8F8F8", overflow: 'hidden' }}>
             {/* Background text */}
             <h1 className="position-absolute top-0 start-0 w-100 text-center text-secondary fw-bold d-none d-lg-block"
                 style={{
@@ -10,8 +10,10 @@ const SpeakingMedia = () => {
                     opacity: 0.07,
                     zIndex: 0,
                     whiteSpace: 'nowrap',
-                    marginTop: '3rem',
-                    pointerEvents: 'none'
+                    marginTop: '1rem',
+                    pointerEvents: 'none',
+                    fontFamily: 'Andada Pro',
+                    
                 }}>
                 SPEAKING AND MEDIA
             </h1>
@@ -21,7 +23,7 @@ const SpeakingMedia = () => {
                     {/* Text Section */}
                     <div className="col-12 col-lg-6 order-2 order-lg-1 py-4 py-lg-0">
                         <div className="ps-lg-4 pe-lg-5" style={{ maxWidth: '600px', margin: '0 auto' }}>
-                            <p className="text-muted mb-2 mb-lg-3">Top Motivational Speaker</p>
+                            <p className="mb-2 mt-5 mb-lg-3" style={{ fontFamily: 'AnoRegular-Regular', color:'#1E1E1E'}}>Top Motivational Speaker</p>
                             <h2 className="fw-bold mb-4 mb-lg-5" style={{
                                 fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
                                 color: '#2F1744',
@@ -30,59 +32,59 @@ const SpeakingMedia = () => {
                                 “Jill Captivates <br className="d-none d-md-block" /> Audiences!”
                             </h2>
 
-                            {/* Your Original Button - Preserved Exactly */}
-                            <div className="mt-4 mt-md-5 position-relative">
-                                <div
-                                    style={{
-                                        width: 'clamp(70px, 10vw, 100px)',
-                                        height: 'clamp(70px, 10vw, 100px)',
-                                        borderRadius: "50%",
-                                        border: "1px solid rgba(209, 205, 203, 0.2)",
-                                        display: "flex",
-                                        alignItems: "center",
-                                        justifyContent: "center",
-                                        fontSize: "clamp(0.6rem, 1.5vw, 0.75rem)",
-                                        textAlign: "center",
-                                        lineHeight: 1.2,
-                                        fontWeight: 600,
-                                        color: "#2F1744",
-                                        position: "relative",
-                                        boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.1)',
-                                        backgroundColor: 'white',
-                                        marginLeft: '32px' // Added to compensate for the arrow
-                                    }}
-                                >
-                                    <span>BOOK JILL<br />RIGHT NOW</span>
+                            {/* Book Jill Button */}
+                            <div className="mt-3 d-flex align-items-center justify-content-start hero-book-button" style={{ marginRight: '200px' }}>
+                                <div style={{ width: '40px', height: '1.5px', backgroundColor: '#2EB6B0' }} />
+                                <div style={{
+                                    width: 135,
+                                    height: 135,
+                                    borderRadius: '50%',
+                                    backgroundColor: '#ffffff',
+                                    boxShadow: '0 0 12px rgba(0, 0, 0, 0.05)',
+                                    display: 'flex',
+                                    alignItems: 'end',
+                                    justifyContent: 'end',
+                                    textAlign: 'center',
+                                    fontSize: '12px',
+                                    fontWeight: 600,
+                                    color: '#363636',
+                                    position: 'relative',
+
+                                }}>
+                                    {/* Arrow Line - Preserved */}
+                                    <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '50%',
+                                            left: '0',
+                                            transform: 'translateY(-50%)',
+                                            width: '20px',
+                                            height: '1.5px',
+                                            backgroundColor: '#2EB6B0',
+                                        }}
+                                    />
+
+                                    {/* Arrow Head - Preserved */}
+                                    <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '50%',
+                                            left: '20px',
+                                            transform: 'translateY(-50%)',
+                                            width: 0,
+                                            height: 0,
+                                            borderTop: '6px solid transparent',
+                                            borderBottom: '6px solid transparent',
+                                            borderLeft: '10px solid #2EB6B0',
+
+                                        }}
+                                    />
+                                    <span style={{ fontFamily: "'Ano Bold', serif", fontSize: '12px', fontStyle: 'normal', textAlign: 'right', margin: '15px 25px' }}>
+                                        BOOK JILL<br />RIGHT NOW
+                                    </span>
                                 </div>
-
-                                {/* Arrow Line - Preserved */}
-                                <div
-                                    style={{
-                                        position: 'absolute',
-                                        top: '50%',
-                                        left: '0',
-                                        transform: 'translateY(-50%)',
-                                        width: '50px',
-                                        height: '1.5px',
-                                        backgroundColor: '#2F1744',
-                                    }}
-                                />
-
-                                {/* Arrow Head - Preserved */}
-                                <div
-                                    style={{
-                                        position: 'absolute',
-                                        top: '50%',
-                                        left: '50px',
-                                        transform: 'translateY(-50%)',
-                                        width: 0,
-                                        height: 0,
-                                        borderTop: '6px solid transparent',
-                                        borderBottom: '6px solid transparent',
-                                        borderLeft: '10px solid #2F1744'
-                                    }}
-                                />
                             </div>
+                            
                         </div>
                     </div>
 

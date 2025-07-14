@@ -3,13 +3,13 @@ import racheal from '../assets/racheal.png';
 
 const TestimonialCard = () => {
     return (
-        <div style={{ backgroundColor: "#2EB6B0", padding: "80px 0" }}>
+        <div style={{ backgroundColor: "#2EB6B0", padding: "90px 0" }}>
             <div className="container d-flex justify-content-center align-items-center flex-wrap gap-5">
                 {/* Left card */}
                 <div
                     style={{
                         backgroundColor: "#2F1744",
-                        width: "300px",
+                        width: "330px",
                         padding: "20px",
                         color: "white",
                         position: "relative",
@@ -21,25 +21,25 @@ const TestimonialCard = () => {
                         style={{
                             position: "absolute",
                             top: "40px",
-                            left: "70%",
+                            left: "72%",
                             transform: "translateX(-50%)",
-                            width: "230px",
-                            height: "120px",
+                            width: "280px",
+                            height: "130px",
                             objectFit: "cover",
                             borderRadius: "1px",
                         }}
                     />
-                    <div style={{ paddingTop: "200px" }}>
-                        <h5 style={{ fontWeight: "bold" }}>RACHEL SEXTON</h5>
-                        <p style={{ fontSize: "0.9rem" }}>
+                    <div style={{ paddingTop: "180px", paddingRight:'20px', paddingLeft:'10px' }}>
+                        <h5 style={{ fontWeight: "bold", fontFamily:'Andada Pro' }}>RACHEL SEXTON</h5>
+                        <p style={{ fontSize: "13px", fontFamily:'AnoRegular-Regular' }}>
                             Vice President at VPR Patient Outreach Program.
                         </p>
                     </div>
                 </div>
 
                 {/* Right text */}
-                <div style={{ maxWidth: "300px", color: "white"}}>
-                    <p style={{ fontSize: "1.1rem", margin:'50px' }}>
+                <div style={{ maxWidth: "400px", color: "white"}}>
+                    <p style={{ fontSize: "1.4rem", margin: '50px', fontFamily:'AnoRegular-Regular' }}>
                         “Jill is a phenomenal inspirational speaker. She lives it to give it
                         which has motivated me beyond what I had imagined.”
                     </p>

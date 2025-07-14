@@ -109,14 +109,14 @@ const Hero = () => {
                         </button>
 
                         {/* Desktop Navbar */}
-                        <nav className="py-2 d-none d-lg-flex flex-column justify-content-center align-items-center" style={{ marginLeft: '100px' }}>
+                        <nav className="py-2 d-none d-lg-flex flex-column justify-content-center align-items-center" style={{ marginLeft: '140px', fontFamily:'AnoRegular-Regular' }}>
                             <ul className="nav">
                                 <li className="nav-item"><a className="nav-link" style={{ color: '#111111' }} href="#">Speaking+Leadership Training</a></li>
                                 <li className="nav-item"><a className="nav-link" style={{ color: '#111111' }} href="#">Ukraine Warriors</a></li>
                                 <li className="nav-item"><a className="nav-link" style={{ color: '#111111' }} href="#">Mission</a></li>
                                 <li className="nav-item"><a className="nav-link" style={{ color: '#111111' }} href="#">Media</a></li>
                                 <li className="nav-item"><a className="nav-link" style={{ color: '#111111' }} href="#">Resources</a></li>
-                                <li className="nav-item"><a className="nav-link text-decoration-underline" style={{ color: '#111111' }} href="#">Contact<i className="fas fa-arrow-up-right ms-1"></i></a></li>
+                                <li className="nav-item"><a className="nav-link text-decoration-underline" style={{ color: '#2F1744', fontFamily:'Ano Bold !important' }} href="#">Contact<i className="fas fa-arrow-up-right ms-1"></i></a></li>
                             </ul>
                         </nav>
 
@@ -162,17 +162,17 @@ const Hero = () => {
 
                         {/* Hero Text */}
                         <div className='d-md-flex flex-column justify-content-center align-items-center flex-grow-1 px-3 hero-text-container'>
-                            <h1 className="display-3 fw-medium hero-heading">
-                                "Motivational, <br />
+                            <h1 className="display-3 fw-medium hero-heading" style={{fontFamily:'Andada Pro'}}>
+                            “Motivational, <br />
                                 <span className="hero-heading-indent" style={{ marginLeft: '270px' }}> Inspirational</span> <br />
-                                <span>& Hilarious!"</span>
+                                <span>& Hilarious!”</span>
                             </h1>
-                            <ul className='fst-italic mt-2 d-flex align-items-center justify-content-center flex-wrap list-unstyled gap-5 hero-list' style={{ marginLeft: '50px' }}>
-                                <li className="d-flex align-items-center" style={{ fontFamily: "'Andada Pro', serif" }}>
+                            <ul className='fst-italic mt-2 d-flex align-items-center justify-content-center flex-wrap list-unstyled gap-5 hero-list' style={{ marginLeft: '50px' , fontFamily:'Andada Pro' }}>
+                                <li className="d-flex align-items-center">
                                     <div className="me-3" style={{ width: '12px', height: '12px', backgroundColor: '#2EB6B0' }}></div>
                                     Live ON Purpose!
                                 </li>
-                                <li className="d-flex align-items-center" style={{ fontFamily: "'Andada Pro', serif" }}>
+                                <li className="d-flex align-items-center">
                                     <div className="me-3" style={{ width: '12px', height: '12px', backgroundColor: '#2EB6B0' }}></div>
                                     Take Inspired Action
                                 </li>
@@ -182,34 +182,50 @@ const Hero = () => {
                             <div className="mt-3 d-flex align-items-center justify-content-start hero-book-button" style={{ marginRight: '500px' }}>
                                 <div style={{ width: '40px', height: '1.5px', backgroundColor: '#2EB6B0' }} />
                                 <div style={{
-                                    width: 120,
-                                    height: 120,
+                                    width: 135,
+                                    height: 135,
                                     borderRadius: '50%',
                                     backgroundColor: '#ffffff',
-                                    boxShadow: '0 0 12px rgba(0, 0, 0, 0.05)',
+                                    boxShadow: '0 0 100px rgba(0, 0, 0, 0.08)',
                                     display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
+                                    alignItems: 'end',
+                                    justifyContent: 'end',
                                     textAlign: 'center',
-                                    fontSize: '0.8rem',
+                                    fontSize: '12px',
                                     fontWeight: 600,
-                                    color: '#333',
-                                    position: 'relative'
+                                    color: '#363636',
+                                    position: 'relative',
+                        
                                 }}>
+                                    {/* Arrow Line - Preserved */}
                                     <div
                                         style={{
                                             position: 'absolute',
-                                            left: '5px',
                                             top: '50%',
+                                            left: '0',
+                                            transform: 'translateY(-50%)',
+                                            width: '20px',
+                                            height: '1.5px',
+                                            backgroundColor: '#2EB6B0',
+                                        }}
+                                    />
+
+                                    {/* Arrow Head - Preserved */}
+                                    <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '50%',
+                                            left: '20px',
                                             transform: 'translateY(-50%)',
                                             width: 0,
                                             height: 0,
-                                            borderTop: '4px solid transparent',
-                                            borderBottom: '4px solid transparent',
-                                            borderLeft: '6px solid #2EB6B0'
+                                            borderTop: '6px solid transparent',
+                                            borderBottom: '6px solid transparent',
+                                            borderLeft: '10px solid #2EB6B0',
+            
                                         }}
                                     />
-                                    <span style={{ fontFamily: "'Andada Pro', serif", fontSize: '12px', fontStyle: 'normal', textAlign: 'right' }}>
+                                    <span style={{ fontFamily: "'Ano Bold', serif", fontSize: '12px', fontStyle: 'normal', textAlign: 'right', margin:'15px 25px' }}>
                                         BOOK JILL<br />RIGHT NOW
                                     </span>
                                 </div>

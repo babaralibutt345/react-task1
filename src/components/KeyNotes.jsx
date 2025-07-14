@@ -17,69 +17,74 @@ const KeyNotes = () => {
                     transform: 'translateY(-50%)',
                     zIndex: 0,
                     opacity: 0.8,
-                    maxWidth: 'clamp(100px, 15vw, 200px)'
+                    maxWidth: 'clamp(100px, 15vw, 400px)',
                 }}
             />
 
             <div className="container px-0">
                 <div className="row align-items-center">
                     {/* Left Text Column */}
-                    <div className="col-12 col-lg-6 order-2 order-lg-1 py-4 py-lg-0">
-                        <div className="px-3 px-md-5 px-lg-4 px-xl-5">
-                            <h2 className="fw-bold text-dark display-5">Key Notes</h2>
-                            <h5 className="text-dark mt-3 h4">
+                    <div className="col-12 col-lg-6 order-2 order-lg-1 py-5 py-lg-0">
+                        <div className="px-3 px-md-5 px-lg-4 px-xl-5" style={{marginLeft: '50px'}}>
+                            <h2 className="fw-bold display-5" style={{ color:'#2F1744', fontSize:'50px'}}>Key Notes</h2>
+                            <h5 className="text-dark mt-3 h4" style={{fontFamily:'Ano Bold' , fontSize:'20px'}}>
                                 Ignite Audiences & Transform Lives
                             </h5>
-                            <p className="mt-3 text-muted lead">
+                            <p className="mt-3" style={{ fontFamily:'AnoRegular-Regular'}}>
                                 Jill's high-energy, humor and depth, captivates and challenges audiences to take inspired action and achieve powerful positive change.
                             </p>
 
-                            {/* Circular Button with Extended Arrow - Matching Previous Section */}
-                            <div className="mt-4 mt-md-5 position-relative" style={{ width: 'fit-content', marginLeft: 'auto' }}>
-                                <div
-                                    className="d-flex align-items-center justify-content-center text-center"
-                                    style={{
-                                        width: 'clamp(70px, 10vw, 100px)',
-                                        height: 'clamp(70px, 10vw, 100px)',
-                                        borderRadius: "50%",
-                                        border: "1px solid rgba(209, 205, 203, 0.2)",
-                                        fontSize: "clamp(0.6rem, 1.5vw, 0.75rem)",
-                                        fontWeight: 600,
-                                        color: "#2F1744",
-                                        boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.1)',
-                                        backgroundColor: 'white',
-                                        cursor: 'pointer',
-                                        marginLeft: '32px' // For arrow space
-                                    }}
-                                >
-                                    <span>BOOK JILL<br />FOR OUR EVENT</span>
+                            {/* Book Jill Button */}
+                            <div className="mt-3 d-flex align-items-center justify-content-end hero-book-button" style={{  }}>
+                                <div style={{ width: '40px', height: '1.5px', backgroundColor: '#2EB6B0' }} />
+                                <div style={{
+                                    width: 135,
+                                    height: 135,
+                                    borderRadius: '50%',
+                                    backgroundColor: '#ffffff',
+                                    boxShadow: '0 0 100px rgba(0, 0, 0, 0.08)',
+                                    display: 'flex',
+                                    alignItems: 'end',
+                                    justifyContent: 'end',
+                                    textAlign: 'center',
+                                    fontSize: '12px',
+                                    fontWeight: 600,
+                                    color: '#363636',
+                                    position: 'relative',
+
+                                }}>
+                                    {/* Arrow Line - Preserved */}
+                                    <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '50%',
+                                            left: '0',
+                                            transform: 'translateY(-50%)',
+                                            width: '20px',
+                                            height: '1.5px',
+                                            backgroundColor: '#2EB6B0',
+                                        }}
+                                    />
+
+                                    {/* Arrow Head - Preserved */}
+                                    <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '50%',
+                                            left: '20px',
+                                            transform: 'translateY(-50%)',
+                                            width: 0,
+                                            height: 0,
+                                            borderTop: '6px solid transparent',
+                                            borderBottom: '6px solid transparent',
+                                            borderLeft: '10px solid #2EB6B0',
+
+                                        }}
+                                    />
+                                    <span style={{ fontFamily: "'Ano Bold', serif", fontSize: '12px', fontStyle: 'normal', textAlign: 'right', margin: '15px 18px' }}>
+                                        BOOK JILL<br />FOR OUR EVENT
+                                    </span>
                                 </div>
-                                {/* Arrow Line */}
-                                <div
-                                    style={{
-                                        position: 'absolute',
-                                        top: '50%',
-                                        left: '0',
-                                        transform: 'translateY(-50%)',
-                                        width: 'clamp(30px, 5vw, 50px)',
-                                        height: '1.5px',
-                                        backgroundColor: '#2F1744',
-                                    }}
-                                />
-                                {/* Arrow Head */}
-                                <div
-                                    style={{
-                                        position: 'absolute',
-                                        top: '50%',
-                                        left: 'clamp(30px, 5vw, 50px)',
-                                        transform: 'translateY(-50%)',
-                                        width: 0,
-                                        height: 0,
-                                        borderTop: '6px solid transparent',
-                                        borderBottom: '6px solid transparent',
-                                        borderLeft: '10px solid #2F1744'
-                                    }}
-                                />
                             </div>
 
                             {/* Centered Navigation Buttons */}

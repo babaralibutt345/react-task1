@@ -6,7 +6,7 @@ const PillarsSection = () => {
         <div className="container d-flex justify-content-center align-items-center flex-wrap py-5">
             {/* Left Column */}
             <div className="d-flex flex-column gap-4">
-                <div className="d-flex align-items-center gap-3">
+                <div className="d-flex align-items-center gap-3" style={{fontFamily:'Andada Pro', fontWeight:'bolder'}}>
                     <span
                         style={{
                             width: 20,
@@ -44,12 +44,13 @@ const PillarsSection = () => {
             {/* Right Card */}
             <Card
                 style={{
-                    backgroundColor: "#22C7B8",
+                    backgroundColor: "#2EB6B0",
                     width: "250px",
-                    padding: "10px",
+                    padding: "30px 17px",
                     color: "white",
                     border: "none",
-                    marginLeft:'200px'
+                    marginLeft:'200px',
+                    fontFamily:'AnoRegular-Regular'
                 }}
             >
                 <Card.Body>

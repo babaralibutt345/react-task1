@@ -6,7 +6,7 @@ import jills5 from '../assets/jills5.png';
 
 const JillVideos = () => {
     const thumbnails = [
-        { src: jills1, title: 'Make Goals Not Excuses | Jill Tupper' },
+      { src: jills1, title: 'Make Goals Not Excuses | Jill Tupper' },
         { src: jills2, title: 'Lead with Purpose | Jill Tupper' },
         { src: jills3, title: 'Mindful Leadership' },
         { src: jills4, title: 'Powerful Storytelling' },
@@ -15,8 +15,8 @@ const JillVideos = () => {
 
     return (
         <section className="container-fluid py-5 text-center">
-            <p>#Youtube</p>
-            <h2 className="fw-bold">Jill’s Videos</h2>
+            <p style={{ fontFamily: 'AnoRegular-Regular', color:'#1E1E1E !important'}}>#Youtube</p>
+            <h2 className="fw-bold mb-5">Jill’s Videos</h2>
 
             <div className="d-flex justify-content-center align-items-center mt-4 gap-4">
                 {thumbnails.map((item, idx) => (
@@ -45,7 +45,7 @@ const JillVideos = () => {
                 ))}
             </div>
 
-            <p className="mt-5 fw-bold">Make Goals Not Excuses | Jill Tupper</p>
+            <p className="mt-5" style={{fontFamily:'Ano Bold', fontSize:'13px'}}>Make Goals Not Excuses | Jill Tupper</p>
         </section>
       );
     
