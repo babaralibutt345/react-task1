@@ -1,0 +1,27 @@
+.video-play-button {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .video-play-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: -1;
+    animation: ripple 1.5s infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+  

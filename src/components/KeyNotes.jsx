@@ -1,10 +1,17 @@
-import keynoteSection from '../assets/keynoteSection.jpg';
+import keynoteSection from '../assets/keynoteSection.png';
 import maskGroup from '../assets/maskGroup.png';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import arrowleft from '../assets/arrowleft.png';
+import arrowright from '../assets/arrowright.png';
+import '../components/KeyNotes.css';
 
 const KeyNotes = () => {
     return (
-        <section className="container-fluid py-4 py-md-5 position-relative overflow-hidden">
+        <section className="container-fluid position-relative overflow-hidden mt-4 mb-5"
+        style={{
+            backgroundColor: "#FAFAFA"
+        }}
+        >
             {/* Mask Group Overlay - Keep It Intact */}
             <img
                 src={maskGroup}
@@ -12,25 +19,30 @@ const KeyNotes = () => {
                 className="d-none d-lg-block"
                 style={{
                     position: 'absolute',
-                    top: '40%',
+                    top: '41%',
                     left: '0%',
-                    transform: 'translateY(-50%)',
+                    transform: 'translateY(-46%)',
                     zIndex: 0,
-                    opacity: 0.8,
-                    maxWidth: 'clamp(100px, 15vw, 400px)',
+                    opacity: 1,
+                    // width: 'clamp(150px, 15vw, 400px)',      // ✅ set width explicitly
+                    width:'clamp(170px, 124.2px + 14.3125vw, 399px)',
+                    height: 'clamp(200px, 106.6px + 29.1875vw, 667px)',     // ✅ set height explicitly                  // optional for scaling properly
                 }}
             />
 
-            <div className="container-fluid px-0">
-                <div className="row g-0 align-items-center">
+            <div className="container-fluid">
+                <div className="row align-items-center justify-content-center">
                     {/* Left Column - Text */}
-                    <div className="col-12 col-lg-6 order-1 order-lg-1 d-flex align-items-center justify-content-center">
+                    <div className="col-12 col-md-6 order-1 order-lg-1 d-flex align-items-center justify-content-lg-center">
                         <div
-                            className="px-3 px-md-5 px-lg-5 py-5"
+                            className="px-3 px-md-5 px-lg-5 py-5 responsive-margin"
                             style={{
-                                marginLeft: 'clamp(10px, 3vw, 90px)',
+                                // marginLeft: window.innerWidth >= 992
+                                //     ? 'clamp(130px, 102px + 8.75vw, 270px)' // lg and up
+                                //     : '0px', // xs, sm, md
+                                marginTop: '70px',
                                 zIndex: 1,
-                                width:'550px',
+                                width: 'clamp(200px, 110px + 28.125vw, 650px)',
                                 position: 'relative'
                             }}
                         >
@@ -38,17 +50,17 @@ const KeyNotes = () => {
                                 className="fw-bold"
                                 style={{
                                     color: '#2F1744',
-                                    fontSize: 'clamp(28px, 5vw, 50px)'
+                                    fontSize: 'clamp(25px, 16px + 2.8125vw, 70px)'
                                 }}
                             >
                                 Key Notes
                             </h2>
 
                             <h5
-                                className="text-dark mt-3"
+                                className="text-dark mt-5"
                                 style={{
                                     fontFamily: 'Ano Bold',
-                                    fontSize: 'clamp(16px, 2.5vw, 20px)'
+                                    fontSize: 'clamp(12px, 9.6px + 0.75vw, 24px)'
                                 }}
                             >
                                 Ignite Audiences & Transform Lives
@@ -58,92 +70,99 @@ const KeyNotes = () => {
                                 className="mt-3"
                                 style={{
                                     fontFamily: 'AnoRegular-Regular',
-                                    fontSize: 'clamp(13px, 2vw, 16px)'
+                                    fontSize: 'clamp(9px, 6.8px + 0.6875vw, 20px)'
                                 }}
                             >
                                 Jill's high-energy, humor and depth, captivates and challenges audiences to take inspired action and achieve powerful positive change.
                             </p>
 
-                            {/* Book Jill Button */}
-                            <div className="mt-3 d-flex align-items-center justify-content-end">
-                                <div style={{ width: '40px', height: '1.5px', backgroundColor: '#2EB6B0' }} />
+                            {/* Button */}
+                            <div className="d-flex justify-content-center justify-content-md-end align-items-center pt-2 pb-lg-5 me-3">
                                 <div style={{
-                                    width: 135,
-                                    height: 135,
-                                    borderRadius: '50%',
-                                    backgroundColor: '#ffffff',
-                                    boxShadow: '0 0 100px rgba(0, 0, 0, 0.08)',
-                                    display: 'flex',
-                                    alignItems: 'end',
-                                    justifyContent: 'end',
-                                    textAlign: 'center',
-                                    fontSize: '12px',
-                                    fontWeight: 600,
-                                    color: '#363636',
-                                    position: 'relative',
-                                }}>
+                                    width: "clamp(20px, 5vw, 40px)",
+                                    height: "clamp(1px, 0.5vw, 1.5px)",
+                                    backgroundColor: "#2EB6B0"
+                                }}
+                                />
+                                <div
+                                    style={{
+                                        width: 'clamp(100px, 10vw, 135px)',
+                                        height: 'clamp(100px, 10vw, 135px)',
+                                        borderRadius: "50%",
+                                        backgroundColor: "#ffffff",
+                                        boxShadow: "0 0 18px rgba(0, 0, 0, 0.08)",
+                                        display: "flex",
+                                        alignItems: "end",
+                                        justifyContent: "end",
+                                        textAlign: "center",
+                                        fontSize: "clamp(10px, 1vw, 12px)",
+                                        fontWeight: 600,
+                                        color: "#363636",
+                                        position: "relative",
+                                    }}
+                                >
+                                    {/* Arrow */}
                                     <div
                                         style={{
-                                            position: 'absolute',
-                                            top: '50%',
-                                            left: '0',
-                                            transform: 'translateY(-50%)',
-                                            width: '20px',
-                                            height: '1.5px',
-                                            backgroundColor: '#2EB6B0',
+                                            position: "absolute",
+                                            top: "50%",
+                                            left: "0",
+                                            transform: "translateY(-50%)",
+                                            width: "clamp(10px, 2vw, 20px)",
+                                            height: "clamp(1px, 0.3vw, 1.5px)",
+                                            backgroundColor: "#2EB6B0",
                                         }}
                                     />
                                     <div
                                         style={{
-                                            position: 'absolute',
-                                            top: '50%',
-                                            left: '20px',
-                                            transform: 'translateY(-50%)',
+                                            position: "absolute",
+                                            top: "50%",
+                                            left: "20px",
+                                            transform: "translateY(-50%)",
                                             width: 0,
                                             height: 0,
-                                            borderTop: '6px solid transparent',
-                                            borderBottom: '6px solid transparent',
-                                            borderLeft: '10px solid #2EB6B0',
+                                            borderTop: "6px solid transparent",
+                                            borderBottom: "6px solid transparent",
+                                            borderLeft: "10px solid #2EB6B0",
                                         }}
                                     />
                                     <span
                                         style={{
                                             fontFamily: "'Ano Bold', serif",
-                                            fontSize: '12px',
-                                            textAlign: 'right',
-                                            margin: '15px 18px'
+                                            fontSize: "clamp(10px, 1vw, 12px)",
+                                            fontStyle: "normal",
+                                            textAlign: "right",
+                                            margin: "clamp(10px, 2vw, 15px) clamp(15px, 5vw, 25px)",
                                         }}
                                     >
-                                        BOOK JILL<br />FOR OUR EVENT
+                                        CONTACT<br />WITH US
                                     </span>
                                 </div>
-                            </div>
+                            </div>  
 
                             {/* Navigation Buttons */}
-                            <div className="mt-4 d-flex justify-content-center gap-3">
-                                <button className="btn btn-info text-white rounded-circle p-3">
-                                    <FaChevronLeft />
-                                </button>
-                                <button className="btn btn-info text-white rounded-circle p-3">
-                                    <FaChevronRight />
-                                </button>
+                            <div className="d-flex justify-content-lg-start justify-content-center gap-1 pt-sm-4">
+                                <img src={arrowleft} className='img-fluid' style={{ width: 'clamp(30px, 18.8px + 3.5vw, 86px)', height:'clamp(30px, 18.8px + 3.5vw, 86px)'}} alt="" />
+                                <img src={arrowright} className='img-fluid' style={{ width: 'clamp(30px, 18.8px + 3.5vw, 86px)', height:'clamp(30px, 18.8px + 3.5vw, 86px)'}} alt="" />
                             </div>
                         </div>
                     </div>
 
                     {/* Right Column - Image */}
-                    <div className="col-12 col-lg-6 order-2 order-lg-2">
+                    <div className="col-12 col-md-6 order-2 order-lg-2 p-0"> {/* p-0 added */}
                         <div
-                            className="position-relative w-100"
-                            style={{ minHeight: 'clamp(250px, 50vw, 600px)' }}
+                            style={{ minHeight: 'clamp(200px, 120px + 25vw, 600px)' }}
                         >
                             <img
                                 src={keynoteSection}
                                 alt="Key Notes"
-                                className="position-absolute top-0 start-0 w-100 h-100"
+                                className="img-fluid"
                                 style={{
+                                    width: '100%', // full width
+                                    height: 'clamp(200px, 67.2px + 41.5vw, 864px)',
                                     objectFit: 'cover',
-                                    objectPosition: 'center',
+                                    objectPosition: 'right', // optional
+                                    display: 'block', // removes inline gap
                                 }}
                             />
                         </div>

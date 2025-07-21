@@ -1,0 +1,14 @@
+.responsive-margin {
+    margin-left: 0px;
+  }
+
+  @media (min-width: 992px) {
+    .responsive-margin {
+        margin-left: clamp(130px, 102px + 8.75vw, 270px);
+    }
+}
+@media (max-width: 767px) {
+    .responsive-margin {
+        margin: 0 auto;
+    }
+}

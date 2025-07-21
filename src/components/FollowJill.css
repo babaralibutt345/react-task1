@@ -1,0 +1,25 @@
+.responsive-padding {
+    padding-left: clamp(50px, 10vw, 200px);
+    padding-right: clamp(50px, 10vw, 200px);
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .responsive-padding {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .responsive-padding1 {
+    padding-left: clamp(50px, 10vw, 200px);
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .responsive-padding1 {
+      padding-left: 25px;
+    }
+  }
+  @media(min-width:0) and (max-width: 768px) {
+    .responsive-padding1 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+  }

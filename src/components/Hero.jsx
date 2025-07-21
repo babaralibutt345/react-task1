@@ -16,14 +16,14 @@ const Hero = () => {
             <div className="container-fluid" style={{overflowX:'hidden'}}>
                 <div className="row">
                     {/* LEFT SIDE: Logo, Vertical Line, Jill Image */}
-                    <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 hero-left position-relative" style={{ backgroundColor: '#2EB6B0', height: '100vh' }}>
+                    <div className="col-12 col-lg-4 hero-left position-relative" style={{ backgroundColor: '#2EB6B0', height: 'clamp(300px, 168.8px + 41vw, 956px)', width:'clamp(250px, 181.2px + 21.5vw, 594px)' }}>
                         
                         {/* Logo - Responsive positioning */}
                         <img src={logo} alt="Logo"
                             className="img-fluid mt-3 hero-logo d-none d-md-block"
                             style={{ 
-                                maxHeight: '82px', 
-                                marginLeft: '270px', 
+                                maxHeight: 'clamp(35px, 25.6px + 2.9375vw, 82px)', 
+                                marginLeft: 'clamp(100px, 76px + 7.5vw, 220px)', 
                                 height: 'auto'
                             }}
                         />
@@ -36,8 +36,8 @@ const Hero = () => {
                             style={{
                                 position: "absolute",
                                 
-                                transform: "translate(70% , 15%)",
-                                maxWidth: "82%",
+                                transform: "translate(78% , 14%)",
+                                width: "75%",
                                 // maxWidth: { xs: "80%", md: "58%", lg:'58%' },
                                 height: "70%",
                                 objectFit: "cover",
@@ -64,8 +64,8 @@ const Hero = () => {
                             className="hero-arrow-circle"
                             style={{
                                 position: "absolute",
-                                top: "86%",
-                                left: "41%",
+                                top: "85%",
+                                left: "40%",
                                 width: "45px",
                                 height: "45px",
                                 borderRadius: "50%",
@@ -81,7 +81,7 @@ const Hero = () => {
                     </div>
 
                     {/* RIGHT SIDE: Navbar + Text */}
-                    <div className="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex flex-column p-3" style={{ maxHeight: '95vh'}}>
+                    <div className="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex flex-column p-3" style={{ maxHeight: '100vh'}}>
                         
                         {/* Mobile Logo (hidden on desktop) */}
                         <div className="mobile-logo d-md-none position-absolute" style={{ top: '15px', left: '15px', zIndex: '1000' }}>
@@ -106,7 +106,7 @@ const Hero = () => {
                         </button>
 
                         {/* Desktop Navbar */}
-                        <nav className="py-2 d-none d-lg-flex flex-column justify-content-center align-items-center" style={{ marginLeft: '140px', fontFamily:'AnoRegular-Regular' }}>
+                        <nav className="py-2 d-none d-lg-flex flex-column justify-content-center align-items-center" style={{ marginLeft: '110px', fontFamily:'AnoRegular-Regular' }}>
                             <ul className="nav">
                                 <li className="nav-item"><a className="nav-link" style={{ color: '#111111' }} href="#">Speaking+Leadership Training</a></li>
                                 <li className="nav-item"><a className="nav-link" style={{ color: '#111111' }} href="#">Ukraine Warriors</a></li>
@@ -158,37 +158,37 @@ const Hero = () => {
                         )}
 
                         {/* Hero Text */}
-                        <div className='d-md-flex flex-column justify-content-center align-items-center flex-grow-1 hero-text-container'>
-                            <h1 className="display-3 fw-bold hero-heading" style={{ fontFamily: 'Andada Pro', color:'#2F1744' , fontSize:'94px', marginLeft:'250px' }}>
+                        <div className='d-md-flex flex-column justify-content-end align-items-center flex-grow-1' style={{ marginTop: 'clamp(100px, 80px + 6.25vw, 200px)', marginLeft:'clamp(10px, 6px + 1.25vw, 30px)'}}>
+                            <h1 className="display-3 fw-bold hero-heading" style={{ fontFamily: 'Andada Pro', color: '#2F1744', fontSize: 'clamp(30px, 20px + 3.125vw, 80px)' }}>
                             “Motivational, <br />
-                                <span className="hero-heading-indent" style={{ marginLeft: '270px' }}> Inspirational</span> <br />
+                                <span className="hero-heading-indent" style={{ marginLeft: 'clamp(100px, 72px + 8.75vw, 240px)' }}> Inspirational</span> <br />
                                 <span>& Hilarious!”</span>
                             </h1>
-                            <ul className='fst-italic mt-2 d-flex align-items-center justify-content-center flex-wrap list-unstyled gap-5 hero-list' style={{ marginLeft: '300px' , fontFamily:'Andada Pro' }}>
-                                <li className="d-flex align-items-center">
-                                    <div className="me-3" style={{ width: '12px', height: '12px', backgroundColor: '#2EB6B0' }}></div>
+                            <ul className='fst-italic mt-2 d-flex align-items-center justify-content-center flex-wrap list-unstyled gap-5 hero-list' style={{ marginLeft: 'clamp(130px, 96px + 10.625vw, 300px)', fontFamily: 'Andada Pro', marginBottom:'clamp(30px, 24px + 1.875vw, 60px)' }}>
+                                <li className="d-flex align-items-center" style={{ fontSize: 'clamp(11px, 8.8px + 0.6875vw, 22px)' }}>
+                                    <div className="me-3" style={{ width: 'clamp(6px, 4.8px + 0.375vw, 12px)', height: 'clamp(6px, 4.8px + 0.375vw, 12px)', backgroundColor: '#2EB6B0'}}></div>
                                     Live ON Purpose!
                                 </li>
-                                <li className="d-flex align-items-center">
-                                    <div className="me-3" style={{ width: '12px', height: '12px', backgroundColor: '#2EB6B0' }}></div>
+                                <li className="d-flex align-items-center" style={{ fontSize:'clamp(11px, 8.8px + 0.6875vw, 22px)'}}>
+                                    <div className="me-3 ms-5" style={{ width: 'clamp(6px, 4.8px + 0.375vw, 12px)', height: 'clamp(6px, 4.8px + 0.375vw, 12px)', backgroundColor: '#2EB6B0' }}></div>
                                     Take Inspired Action
                                 </li>
                             </ul>
 
                             {/* Book Jill Button */}
-                            <div className="mt-3 d-flex align-items-center justify-content-start hero-book-button" style={{ marginRight: '400px' }}>
+                            <div className="mt-3 d-flex align-items-center justify-content-start hero-book-button text-muted" style={{ marginRight: '560px' }}>
                                 <div style={{ width: '40px', height: '1.5px', backgroundColor: '#2EB6B0' }} />
                                 <div style={{
-                                    width: 135,
-                                    height: 135,
+                                    width: 139,
+                                    height: 139,
                                     borderRadius: '50%',
                                     backgroundColor: '#ffffff',
-                                    boxShadow: '0 0 100px rgba(0, 0, 0, 0.08)',
+                                    boxShadow: '0 0 18px rgba(0, 0, 0, 0.08)',
                                     display: 'flex',
                                     alignItems: 'end',
                                     justifyContent: 'end',
                                     textAlign: 'center',
-                                    fontSize: '12px',
+                                    fontSize: '18px',
                                     fontWeight: 600,
                                     color: '#363636',
                                     position: 'relative',

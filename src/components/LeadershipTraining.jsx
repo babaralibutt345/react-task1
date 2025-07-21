@@ -4,25 +4,25 @@ import { FaArrowDown } from 'react-icons/fa';
 const LeadershipTraining = () => {
     return (
         <section className="container-fluid text-center py-4 py-md-5 position-relative">
-            <div className="container px-0">
-                <h2 className="h1 fw-bold">Leadership Training</h2>
-                <p className="fw-bold mt-2" style={{fontFamily:'Ano Bold'}}>The Neuroscience of Leadership</p>
-                <p className="mt-3 mx-auto px-3" style={{ maxWidth: '850px', fontFamily: 'AnoRegular-Regular', fontSize:'14px' }}>
+            <div className="container-fluid">
+                <h2 className="h1 fw-bold" style={{ color: '#2F1744', fontSize: 'clamp(27px, 18.4px + 2.6875vw, 70px)'}}>Leadership Training</h2>
+                <p className="fw-bold mt-2" style={{ fontFamily: 'Ano Bold', fontSize:'clamp(12px, 9.6px + 0.75vw, 24px)'}}>The Neuroscience of Leadership</p>
+                <p className="mt-3 mx-auto px-3" style={{ maxWidth: '60%', fontFamily: 'AnoRegular-Regular', fontSize: 'clamp(6px, 3.6px + 0.75vw, 18px)', color:'#1E1E1E'}}>
                     The Neuroscience of Calming Within The Chaos of Uncertainty & War. True stories & proven tools that work
                     in the battlefield of the mind in the US, as well as, in the war zone of Ukraine!
                 </p>
 
-                <div className="mt-4 mt-md-5 position-relative mx-auto" style={{ maxWidth: '1000px' }}>
+                <div className="mt-4 mt-md-5 position-relative" style={{ maxWidth: '100%' }}>
                     {/* Image with original size */}
                     <div style={{ position: 'relative', display: 'inline-block' }}>
                         <img
                             src={section4img}
                             alt="Leadership"
-                            className="rounded"
+                            className="img-fluid rounded"
                             style={{
-                                width: '100%',
-                                maxWidth: '1000px',
-                                height: 'auto'
+                                width: 'clamp(200px, -44px + 76.25vw, 1420px)',
+                                height: 'clamp(200px, 86.8px + 35.375vw, 766px)',
+                                objectFit:'cover'
                             }}
                         />
 
@@ -30,9 +30,9 @@ const LeadershipTraining = () => {
                         <div
                             style={{
                                 position: 'absolute',
-                                top: '10px',
-                                left: '900px',
-                                height: '90%',
+                                top: '0px',
+                                left: 'clamp(220px, -30px + 78.125vw, 1470px)',
+                                height: '91%',
                                 width: '2px',
                                 backgroundColor: 'black',
                                 borderRadius: '2px',
@@ -44,12 +44,12 @@ const LeadershipTraining = () => {
                             style={{
                                 position: 'absolute',
                                 // top:'10px',
-                                left: '885px',
+                                left: 'clamp(200px, -50px + 78.125vw, 1450px)',
                                 bottom: '0px',
                                 background: 'white',
                                 borderRadius: '50%',
-                                width: '30px',
-                                height: '30px',
+                                width: '40px',
+                                height: '40px',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -57,60 +57,71 @@ const LeadershipTraining = () => {
                                 cursor: 'pointer',
                             }}
                         >
-                            <FaArrowDown size={14} color="#4A306D" />
+                            <FaArrowDown size={16} color="#4A306D" />
                         </div>
                     </div>
                 </div>
 
-                {/* Book Jill Button */}
-                <div className="mt-5 d-flex align-items-center justify-content-start hero-book-button" style={{ marginLeft: '500px' }}>
-                    <div style={{ width: '40px', height: '1.5px', backgroundColor: '#2EB6B0' }} />
+                {/* Button */}
+                <div className="d-flex justify-content-center justify-content-md-center align-items-center pt- pb-5 me-3">
                     <div style={{
-                        width: 135,
-                        height: 135,
-                        borderRadius: '50%',
-                        backgroundColor: '#ffffff',
-                        boxShadow: '0 0 100px rgba(0, 0, 0, 0.08)',
-                        display: 'flex',
-                        alignItems: 'end',
-                        justifyContent: 'end',
-                        textAlign: 'center',
-                        fontSize: '12px',
-                        fontWeight: 600,
-                        color: '#363636',
-                        position: 'relative',
-
-                    }}>
-                        {/* Arrow Line - Preserved */}
+                        width: "clamp(20px, 5vw, 40px)",
+                        height: "clamp(1px, 0.5vw, 1.5px)",
+                        backgroundColor: "#2EB6B0"
+                    }}
+                    />
+                    <div
+                        style={{
+                            width: 'clamp(100px, 10vw, 135px)',
+                            height: 'clamp(100px, 10vw, 135px)',
+                            borderRadius: "50%",
+                            backgroundColor: "#ffffff",
+                            boxShadow: "0 0 18px rgba(0, 0, 0, 0.08)",
+                            display: "flex",
+                            alignItems: "end",
+                            justifyContent: "end",
+                            textAlign: "center",
+                            fontSize: "clamp(10px, 1vw, 12px)",
+                            fontWeight: 600,
+                            color: "#363636",
+                            position: "relative",
+                        }}
+                    >
+                        {/* Arrow */}
                         <div
                             style={{
-                                position: 'absolute',
-                                top: '50%',
-                                left: '0',
-                                transform: 'translateY(-50%)',
-                                width: '20px',
-                                height: '1.5px',
-                                backgroundColor: '#2EB6B0',
+                                position: "absolute",
+                                top: "50%",
+                                left: "0",
+                                transform: "translateY(-50%)",
+                                width: "clamp(10px, 2vw, 20px)",
+                                height: "clamp(1px, 0.3vw, 1.5px)",
+                                backgroundColor: "#2EB6B0",
                             }}
                         />
-
-                        {/* Arrow Head - Preserved */}
                         <div
                             style={{
-                                position: 'absolute',
-                                top: '50%',
-                                left: '20px',
-                                transform: 'translateY(-50%)',
+                                position: "absolute",
+                                top: "50%",
+                                left: "20px",
+                                transform: "translateY(-50%)",
                                 width: 0,
                                 height: 0,
-                                borderTop: '6px solid transparent',
-                                borderBottom: '6px solid transparent',
-                                borderLeft: '10px solid #2EB6B0',
-
+                                borderTop: "6px solid transparent",
+                                borderBottom: "6px solid transparent",
+                                borderLeft: "10px solid #2EB6B0",
                             }}
                         />
-                        <span style={{ fontFamily: "'Ano Bold', serif", fontSize: '12px', fontStyle: 'normal', textAlign: 'right', margin: '15px 25px' }}>
-                            LEARN MORE<br />ABOUT JILL
+                        <span
+                            style={{
+                                fontFamily: "'Ano Bold', serif",
+                                fontSize: "clamp(10px, 1vw, 12px)",
+                                fontStyle: "normal",
+                                textAlign: "right",
+                                margin: "clamp(10px, 2vw, 15px) clamp(15px, 5vw, 25px)",
+                            }}
+                        >
+                            CONTACT<br />WITH US
                         </span>
                     </div>
                 </div>

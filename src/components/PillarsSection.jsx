@@ -1,32 +1,32 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import active from '../assets/active.png';
+import blur from '../assets/blur.png';
 
 const PillarsSection = () => {
     return (
-        <div className="container-fluid p-5" style={{ backgroundColor:"#FAFAFA"}}>
-            <div className="row align-items-center gy-4">
+        <div className="container-fluid" style={{ backgroundColor:"#FAFAFA"}}>
+            <div className="row align-items-center px-xs-5">
                 {/* Left Column */}
-                <div className="col-12 col-md-6 d-flex justify-content-md-end justify-content-center p-5">
-                    <div className="d-flex flex-column align-items-start gap-4">
+                <div className="col-6 d-flex justify-content-md-end justify-content-start px-xs-5 p-md-5">
+                    <div className="d-flex flex-column align-items-start gap-md-3 gap-xxl-4 py-5 px-xs-5 px-md-5">
                         {/* Body */}
                         <div className="d-flex align-items-center gap-3">
-                            <span
-                                style={{
-                                    width: 27,
-                                    height: 27,
-                                    backgroundColor: "#22C7B8",
-                                    borderRadius: "50%",
-                                }}
-                            ></span>
+                            <img src={active} className="img-fluid" alt=""
+                            style={{
+                                width:'clamp(30px, 5vw, 70px)',
+                                height:'clamp(30px, 5vw, 70px)',
+                            }}
+                            />
                             <h3
                                 style={{
                                     color: "#2F1744",
                                     margin: 0,
                                     fontFamily: "Andada Pro",
                                     fontWeight: "bolder",
-                                    fontSize: "clamp(22px, 3vw, 32px)",
+                                    fontSize: "clamp(22px, 3vw, 70px)",
                                     textDecoration: "underline",
-                                    textUnderlineOffset: "8px",
+                                    // textUnderlineOffset: "18px",
                                     textAlign: "start",
                                 }}
                             >
@@ -36,21 +36,20 @@ const PillarsSection = () => {
 
                         {/* Mind */}
                         <div className="d-flex align-items-center gap-3">
-                            <span
+                            
+                            <img src={blur} className="img-fluid" alt="" 
                                 style={{
-                                    width: 27,
-                                    height: 27,
-                                    backgroundColor: "#AAD4D2",
-                                    borderRadius: "50%",
+                                    width: 'clamp(30px, 5vw, 70px)',
+                                    height: 'clamp(30px, 5vw, 70px)',
                                 }}
-                            ></span>
+                            />
                             <h3
                                 style={{
                                     color: "#C1BFD1",
                                     margin: 0,
                                     fontFamily: "Andada Pro",
                                     fontWeight: "bolder",
-                                    fontSize: "clamp(22px, 3vw, 32px)",
+                                    fontSize: "clamp(22px, 3vw, 70px)",
                                     textAlign: "start",
                                 }}
                             >
@@ -60,21 +59,20 @@ const PillarsSection = () => {
 
                         {/* Business */}
                         <div className="d-flex align-items-center gap-3">
-                            <span
+                            <img src={blur} className="img-fluid" alt="" 
                                 style={{
-                                    width: 27,
-                                    height: 27,
-                                    backgroundColor: "#B5E8E2",
-                                    borderRadius: "50%",
+                                    width: 'clamp(30px, 5vw, 70px)',
+                                    height: 'clamp(30px, 5vw, 70px)',
                                 }}
-                            ></span>
+                            />
+
                             <h3
                                 style={{
-                                    color: "#C1DCD9",
+                                    color: "#C1BFD1",
                                     margin: 0,
                                     fontFamily: "Andada Pro",
                                     fontWeight: "bolder",
-                                    fontSize: "clamp(22px, 3vw, 32px)",
+                                    fontSize: "clamp(22px, 3vw, 70px)",
                                     textAlign: "start",
                                 }}
                             >
@@ -85,20 +83,24 @@ const PillarsSection = () => {
                 </div>
 
                 {/* Right Card */}
-                <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
+                <div className="col-6 d-flex justify-content-xs-start justify-content-md-start">
                     <Card
                         style={{
                             backgroundColor: "#2EB6B0",
                             width: "100%",
-                            maxWidth: "320px",
-                            padding: "40px 20px",
+                            maxWidth: "clamp(150px, 50vw, 426px)",
+                            paddingTop: "clamp(20px, 5vw, 90px)",         // ↓ less top padding on xs
+                            paddingBottom: "clamp(20px, 5vw, 90px)",      // ↓ less bottom padding
+                            paddingLeft: "clamp(10px, 3vw, 20px)",         // ↓ less left
+                            paddingRight: "clamp(10px, 3vw, 20px)",        // ↓ less right
                             color: "white",
                             border: "none",
                             fontFamily: "AnoRegular-Regular",
-                            fontSize: "clamp(12px, 2vw, 16px)",
+                            fontSize: "clamp(8px, 2vw, 24px)",
                             textAlign: "left",
-                            borderRadius: "0",
-                            margin:'0'
+                            borderRadius: "5px",
+                            margin:'0',
+
                         }}
                     >
                         <Card.Body>
