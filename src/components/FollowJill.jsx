@@ -50,23 +50,23 @@ const FollowJill = () => {
                     {/* Button */}
                     <div className="d-flex justify-content-center justify-content-md-end align-items-center pt-2 pb-5 me-3">
                         <div style={{
-                            width: "clamp(20px, 5vw, 40px)",
-                            height: "clamp(1px, 0.5vw, 1.5px)", 
+                            width: "clamp(20px, 20px + 0vw, 20px)",
+                            height: "clamp(1.5px, 1.5px + 0vw, 1.5px)", 
                             backgroundColor: "#2EB6B0" }} 
                             />
                         <div
                             style={{
-                                width: 'clamp(100px, 10vw, 135px)',
-                                height: 'clamp(100px, 10vw, 135px)',
+                                width: 'clamp(125px, 123px + 0.625vw, 135px)',
+                                height: 'clamp(125px, 123px + 0.625vw, 135px)',
                                 borderRadius: "50%",
                                 backgroundColor: "#ffffff",
                                 boxShadow: "0 0 18px rgba(0, 0, 0, 0.08)",
                                 display: "flex",
                                 alignItems: "end",
-                                justifyContent: "end",
+                                justifyContent: "center",
                                 textAlign: "center",
-                                fontSize: "clamp(10px, 1vw, 12px)",
-                                fontWeight: 600,
+                                fontSize: "clamp(9px, 8.4px + 0.1875vw, 12px)",
+                                fontWeight: 500,
                                 color: "#363636",
                                 position: "relative",
                             }}
@@ -78,8 +78,8 @@ const FollowJill = () => {
                                     top: "50%",
                                     left: "0",
                                     transform: "translateY(-50%)",
-                                    width: "clamp(10px, 2vw, 20px)",
-                                    height: "clamp(1px, 0.3vw, 1.5px)",
+                                    width: "clamp(20px, 20px + 0vw, 20px)",
+                                    height: "clamp(1.5px, 1.5px + 0vw, 1.5px)",
                                     backgroundColor: "#2EB6B0",
                                 }}
                             />

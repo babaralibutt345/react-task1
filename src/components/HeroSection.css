@@ -34,8 +34,8 @@
   position: absolute;
   top: 85%;
   left: 45%;
-  width: 45px;
-  height: 45px;
+  width: clamp(30px, 27px + 0.9375vw, 45px);
+  height: clamp(30px, 27px + 0.9375vw, 45px);
   border-radius: 50%;
   border: 1px solid white;
   display: flex;
@@ -44,13 +44,10 @@
   background-color: transparent;
 }
 
-/* Right Section */
-.hero-right {
-  max-height: 100vh;
-}
+
 
 .hero-navbar {
-  margin-left: 170px;
+  margin-left: clamp(130px, 122px + 2.5vw, 170px);
   font-family: "AnoRegular-Regular";
   justify-content: center;
   align-items: center;
@@ -82,28 +79,35 @@
 .hero-heading {
   font-family: "Andada Pro";
   color: #2f1744;
-  font-size: clamp(45px, -62.8px + 8.1667vw, 94px);
+  font-size: clamp(30px, 17.2px + 4vw, 94px);
   text-align: left;
   font-weight: 600;
   /* margin-left: 50px; */
 }
 
 .hero-heading-indent {
-  margin-left: clamp(100px, 72px + 8.75vw, 240px);
+  margin-left: clamp(150px, 132px + 5.625vw, 240px);
 }
 
 .hero-list {
   font-family: "Andada Pro";
-  margin-top: 20px;
+  margin-top: clamp(12px, 10.4px + 0.5vw, 20px);
   margin-left: clamp(130px, 96px + 10.625vw, 250px);
-  margin-bottom: clamp(30px, 24px + 1.875vw, 60px);
+  /* margin-bottom: clamp(30px, 24px + 1.875vw, 60px); */
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 4rem;
+  flex-wrap: nowrap;
+  gap: 2.9rem;
   list-style: none;
   font-style: italic;
+}
+
+@media (min-width: 991.7px) and (max-width: 1100px)   {
+  .hero-list {
+    margin-left: 0 !important;
+    gap: 3rem;
+  }
 }
 
 .hero-list li {
@@ -122,8 +126,8 @@
 .hero-book-button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: 500px;
+  justify-content: left;
+  margin-right: clamp(200px, 120px + 25vw, 600px);
 }
 
 .hero-book-button > div:first-child {
@@ -133,8 +137,8 @@
 }
 
 .hero-book-button > div:last-child {
-  width: 139px;
-  height: 139px;
+  width: clamp(125px, 123px + 0.625vw, 135px);
+  height: clamp(125px, 123px + 0.625vw, 135px);
   border-radius: 50%;
   background-color: white;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
@@ -143,8 +147,9 @@
   justify-content: end;
   position: relative;
   color: #363636;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: clamp(9px, 8.4px + 0.1875vw, 12px);
+  font-weight: 500;
+  
 }
 
 .hero-book-button .line {
@@ -224,39 +229,56 @@
   z-index: 998;
 }
 
+
 /* Responsive Media Queries */
-@media (max-width: 991px) {
+@media (max-width: 991.7px) {
   .hero-left {
     width: 100% !important;
     height: 80vh !important;
   }
 
   .hero-image {
-    transform: translateX(-50%) !important;
+    transform: translateX(-60%) !important;
     left: 50% !important;
     top: 25% !important;
     max-width: 50% !important;
-    height: 75%;
+    margin-left: 30px;
+    height: 65% !important;
   }
 
   .hero-vertical-line {
+    position: absolute;
     height: 50% !important;
     top: 25%;
-    left: 16%;
+    left: 18%;
     height: 35%;
+     width: 3px;
+    height: 52%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
   }
 
   .hero-arrow-circle {
-    top: 80%;
-    left: 12%;
+    position: absolute;
+     top: 80%;
+    left: 16%;
+    width: clamp(30px, 27px + 0.9375vw, 45px);
+    height: clamp(30px, 27px + 0.9375vw, 45px);
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
   }
 
-  .hero-heading {
-    font-size: 2.5rem !important;
+  
+  .hero-logo {
+    float: left !important;
   }
 
   .hero-heading-indent {
-    margin-left: 80px !important;
+    margin-left: clamp(100px, 72px + 8.75vw, 240px) !important;
   }
 
   .hero-list {
@@ -264,9 +286,6 @@
     gap: 15px;
   }
 
-  .hero-book-button {
-    /* margin-left: 200px; */
-  }
 
   .hero-book-button > div:last-child {
     width: 130px;
@@ -275,7 +294,7 @@
 }
 
 @media (max-width: 480px) {
-  .hero-left {
+  /* .hero-left {
     height: 70vh !important;
   }
 
@@ -294,7 +313,7 @@
 
   .hero-book-button span {
     font-size: 10px !important;
-  }
+  } */
 }
 
 @media (max-width: 1724px) {
@@ -308,56 +327,5 @@
   }
 }
 
-@media (max-width: 992px) {
-  .hero-image {
-    transform: translateX(-50%) !important;
-    left: 50% !important;
-    top: 25% !important;
-    max-width: 50% !important;
-    height: 65% !important;
-  }
-  .hero-vertical-line {
-    /* position: absolute; */
-    top: 25%;
-    left: 18%;
-    width: 3px;
-    height: 52%;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-  }
 
-  .hero-arrow-circle {
-    top: 80%;
-    left: 16%;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 1px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-  }
 
-  .hero-logo {
-    float: left;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 586px) {
-  .hero-arrow-circle {
-    left: 14%;
-  }
-  .hero-image {
-    transform: translateX(-43%) !important;
-    left: 50% !important;
-    top: 25% !important;
-    max-width: 50% !important;
-    height: 65% !important;
-  }
-}
-
-.hero-text {
-    margin-top: clamp(80px, 52px + 8.75vw, 220px);
-    margin-left: clamp(30px, 16px + 4.375vw, 100px);
-}

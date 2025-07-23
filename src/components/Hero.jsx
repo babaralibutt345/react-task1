@@ -38,7 +38,7 @@ const Hero = () => {
                         </button>
 
                         {/* Desktop Navbar */}
-                        <nav className="hero-navbar d-none d-lg-flex">
+                        <nav className="hero-navbar d-none d-lg-flex p-lg-4">
                             <ul className="nav">
                                 <li className="nav-item"><a href="#" className="nav-link">Speaking+Leadership Training</a></li>
                                 <li className="nav-item"><a href="#" className="nav-link">Ukraine Warriors</a></li>
@@ -65,14 +65,14 @@ const Hero = () => {
                         {isMenuOpen && <div className="mobile-overlay d-lg-none" onClick={toggleMenu}></div>}
 
                         {/* HERO TEXT */}
-                        <div className="d-flex flex-column justify-content-center align-items-center align-items-lg-center flex-grow-1 hero-text">
+                        <div className="d-flex flex-column justify-content-lg-center align-items-center align-items-lg-center ps-lg-5 mt-5 mt-lg-2 ms-lg-5 flex-grow-1 pb-5 pb-lg-0 hero-text">
                             <h1 className="hero-heading">
                                 “Motivational,<br />
                                 <span className="hero-heading-indent"> Inspirational</span><br />
                                 <span style={{marginLeft:'40px'}}>& Hilarious!”</span>
                             </h1>
 
-                            <ul className="hero-list">
+                            <ul className="hero-list pb-3 pb-lg-0">
                                 <li><div></div>Live ON Purpose!</li>
                                 <li><div></div>Take Inspired Action</li>
                             </ul>
