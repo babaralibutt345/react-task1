@@ -76,7 +76,7 @@ const SpeakingMedia = () => {
                                         justifyContent: "center",
                                         textAlign: "center",
                                         fontSize: "clamp(9px, 8.4px + 0.1875vw, 12px)",
-                                        fontWeight: 500,
+                                        fontWeight: "500",
                                         color: "#363636",
                                         position: "relative",
                                     }}

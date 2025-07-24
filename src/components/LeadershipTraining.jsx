@@ -1,5 +1,6 @@
 import section4img from '../assets/section4img.jpg';
 import { FaArrowDown } from 'react-icons/fa';
+import '../components/LeadershipTraining.css';
 
 const LeadershipTraining = () => {
     return (
@@ -27,12 +28,12 @@ const LeadershipTraining = () => {
                         />
 
                         {/* Right-side vertical bar - fixed position relative to image */}
-                        <div
+                        <div className='right-vertical-bar'
                             style={{
                                 position: 'absolute',
-                                top: '0px',
+                                top: '0',
                                 left: 'clamp(220px, -30px + 78.125vw, 1470px)',
-                                height: '91%',
+                                height: '90%',
                                 width: '2px',
                                 backgroundColor: 'black',
                                 borderRadius: '2px',
@@ -40,10 +41,10 @@ const LeadershipTraining = () => {
                         ></div>
 
                         {/* Arrow button - fixed position relative to image */}
-                        <div
+                        <div className=''
                             style={{
                                 position: 'absolute',
-                                // top:'10px',
+                                // top:'0px',
                                 left: 'clamp(200px, -50px + 78.125vw, 1450px)',
                                 bottom: '0px',
                                 background: 'white',
@@ -57,13 +58,13 @@ const LeadershipTraining = () => {
                                 cursor: 'pointer',
                             }}
                         >
-                            <FaArrowDown size={16} color="#4A306D" />
+                            <FaArrowDown size={16} color="black" />
                         </div>
                     </div>
                 </div>
 
                 {/* Button */}
-                <div className="d-flex justify-content-center justify-content-md-center align-items-center pt-5 me-3">
+                <div className="d-flex justify-content-center justify-content-md-center align-items-center pt-3 pt-lg-5 me-3">
                     <div style={{
                         width: "clamp(20px, 20px + 0vw, 20px)",
                         height: "clamp(1.5px, 1.5px + 0vw, 1.5px)",
