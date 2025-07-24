@@ -288,8 +288,8 @@
 
 
   .hero-book-button > div:last-child {
-    width: 130px;
-    height: 130px;
+    width: clamp(125px, 123px + 0.625vw, 135px);
+    height: clamp(125px, 123px + 0.625vw, 135px);
   }
 }
 

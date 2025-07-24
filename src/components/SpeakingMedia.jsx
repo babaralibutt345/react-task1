@@ -12,12 +12,12 @@ const SpeakingMedia = () => {
             <h1
                 className="position-absolute top-25 w-100 fw-bold d-lg-block text-center text-lg-start"
                 style={{
-                    right: '2.1%',
+                    right: 'clamp(0px, -8px + 2.5vw, 40px)',
                     fontSize: 'clamp(28px, 5.6px + 7vw, 140px)',
                     opacity: 0.07,
                     zIndex: 0,
                     whiteSpace: 'nowrap',
-                    marginTop: 'clamp(20px, 16px + 1.25vw, 40px)',
+                    paddingTop: 'clamp(25px, 18px + 2.1875vw, 60px)',
                     pointerEvents: 'none',
                     fontFamily: 'Andada Pro',
                 }}
@@ -25,7 +25,7 @@ const SpeakingMedia = () => {
                 SPEAKING AND MEDIA
             </h1>
 
-            <div className="container-fluid position-relative" style={{ zIndex: 2, marginTop: 'clamp(40px, 27px + 4.0625vw, 105px)', marginBottom: 'clamp(50px, 40px + 3.125vw, 100px)' }}>
+            <div className="container-fluid position-relative g-0" style={{ zIndex: 2, marginTop: 'clamp(40px, 27px + 4.0625vw, 105px)', marginBottom: 'clamp(50px, 40px + 3.125vw, 100px)' }}>
                 <div className="row align-items-center gx-0 gy-0">
                     {/* Text Section */}
                     <div className="col-12 col-md-6 order-1 order-lg-1 py-md-4 py-0 py-lg-0 d-flex justify-content-center align-items-center">
@@ -57,7 +57,7 @@ const SpeakingMedia = () => {
                             </h2>
 
                             {/* Button */}
-                            <div className="d-flex justify-content-center justify-content-md-center align-items-center pt-2 pb-5 me-3">
+                            <div className="d-flex justify-content-center justify-content-md-start align-items-center pt-2 pb-5 me-3">
                                 <div style={{
                                     width: "clamp(20px, 20px + 0vw, 20px)",
                                     height: "clamp(1.5px, 1.5px + 0vw, 1.5px)",
@@ -123,16 +123,12 @@ const SpeakingMedia = () => {
                     </div>
 
                     {/* Image/Video Section */}
-                    <div className="col-12 col-md-6 order-2 order-lg-2  mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-start">
+                    <div className="col-12 col-md-6 order-2 order-lg-2 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-start">
                         <div className="position-relative">
                             <img
+                                className='video-part'
                                 src={section2img}
                                 alt="Speaker Thumbnail"
-                                style={{
-                                    width: 'clamp(250px, 114px + 26.875vw, 630px)',
-                                    height: 'clamp(250px, 100.2px + 31.1875vw, 699px)',
-                                    objectFit: 'cover',
-                                }}
                             />
 
                             <button
