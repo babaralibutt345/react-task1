@@ -7,7 +7,7 @@ import '../components/KeyNotes.css';
 
 const KeyNotes = () => {
     return (
-        <section className="container-fluid position-relative overflow-hidden"
+        <section className="container-fluid position-relative overflow-hidden g-0"
         style={{
             backgroundColor: "#FAFAFA"
         }}

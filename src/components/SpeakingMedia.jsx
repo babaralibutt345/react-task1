@@ -1,11 +1,11 @@
-import section2img from '../assets/section2img.jpg';
+import section2img from '../assets/section2img.png';
 import '../components/SpeakingMedia.css'
 
 
 const SpeakingMedia = () => {
     return (
         <section
-            className="position-relative py-5 py-lg-5"
+            className="position-relative py-2 py-lg-5"
             style={{ backgroundColor: "#FAFAFA", overflow: 'hidden' }}
         >
             {/* Background text */}
@@ -25,7 +25,7 @@ const SpeakingMedia = () => {
                 SPEAKING AND MEDIA
             </h1>
 
-            <div className="container-fluid position-relative" style={{ zIndex: 2, marginTop: 'clamp(50px, 39px + 3.4375vw, 105px)', marginBottom: 'clamp(50px, 40px + 3.125vw, 100px)' }}>
+            <div className="container-fluid position-relative" style={{ zIndex: 2, marginTop: 'clamp(40px, 27px + 4.0625vw, 105px)', marginBottom: 'clamp(50px, 40px + 3.125vw, 100px)' }}>
                 <div className="row align-items-center gx-0 gy-0">
                     {/* Text Section */}
                     <div className="col-12 col-md-6 order-1 order-lg-1 py-md-4 py-0 py-lg-0 d-flex justify-content-center align-items-center">
@@ -123,7 +123,7 @@ const SpeakingMedia = () => {
                     </div>
 
                     {/* Image/Video Section */}
-                    <div className="col-12 col-md-6 order-2 order-lg-2 mb-4 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-start">
+                    <div className="col-12 col-md-6 order-2 order-lg-2  mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-start">
                         <div className="position-relative">
                             <img
                                 src={section2img}
