@@ -42,7 +42,7 @@ const KeyNotes = () => {
                                 //     : '0px', // xs, sm, md
                                 marginTop: '70px',
                                 zIndex: 1,
-                                width: 'clamp(200px, 110px + 28.125vw, 650px)',
+                                width: 'clamp(200px, 110px + 28.125vw, 650px)', 
                                 position: 'relative'
                             }}
                         >
@@ -57,7 +57,7 @@ const KeyNotes = () => {
                             </h2>
 
                             <h5
-                                className="text-dark mt-5"
+                                className="text-dark mt-3 mt-lg-5"
                                 style={{
                                     fontFamily: 'Ano Bold',
                                     fontSize: 'clamp(12px, 9.6px + 0.75vw, 24px)'
